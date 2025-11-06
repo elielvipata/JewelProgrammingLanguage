@@ -2,15 +2,6 @@ Jewel is a systems programming langauge with a focus on speed, memory safety and
 
 Jewel's key feature is consequent free abstraction. This will be covered in the abstraction mechanisms section of this doc.
 
-## Update!
-Jewel is getting rewritten to rust. All it took was one major bug caused by the lack of assertions and random memory issues(which I admit are my fault).
-After fixing the bug, I realized just how many parts of the code seemed "fragile". I got frustrated, contemplated a full refactor and then thought of migrating to a new stack that would make things simpler. 
-Correctness is the base goal of a compiler in my opinion. Stability and robustness are right below that and using c++ has increasingly raised concern in the other latter two,so I'll be experimenting with rust for the next month and fully migrating and completing base language features in 2025 with the goal of an alpha version coming out early May. 
-
-I'll document more of this in a langauge blog that I'll work on next year.
-
-Back to the feature set! (This is subject to change due to certain design choices that will be discussed in the near future)
-
 The following are the language features in development and are designed to make the language powerful and easy to use.
 - Haskell-like functional type signatures for type checking
 -  Frames: an entity used to wrap 
@@ -18,20 +9,18 @@ The following are the language features in development and are designed to make 
     -  Functions
     -  Scope/Lifetimes
 - Custom Error Messaging/ Errors as values
-- Explicit move and copy semantics
-    - Referential operators
+- Explicit move and copy semantics based on variable types
 - Pattern Matching
 - Guarded Heap Allocation
-- Dynamic Structs/Objects
-- Inter operation with python and c
-- Partial compilation ... still getting investigated.
+- User defined datatype management
+- Inter operation with assembly and c
 
 ```
 // Hello world example:
-main::[String]->Int
+main::[string]->int
 main args {
     print("hello world");
-    end (0);
+    end(0);
 }
 
 ```
