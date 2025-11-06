@@ -67,11 +67,26 @@ Transparency of behavior is the ideal goal for Jewel. This also applies to memor
 #### Memory Management
 - Jewel technically has automatic memory management using scopes and strict lifetime evaluation at compile time. A new memory management system is currently being worked on  called Principle of First Ownership and will ship in version 2 of the language.
 
+#### Compiler Stack
+
+As mentioned above, Jewel is meant to be a systems programming language so its not interpreted. I originally designed it as an interpreted language but consequent free abstraction makes more sense as a compiler optimization technique(ish) so it makes more sense to have it be compiled.
+This is the current stack:
+- [YACC](https://pubs.opengroup.org/onlinepubs/7908799/xcu/yacc.html) for an experimental parser
+- [LLVM](https://llvm.org/docs/index.html) for code generation
+- [MiMalloc](https://microsoft.github.io/mimalloc) as the memory allocator
+- [Glibc](https://www.gnu.org/software/libc/) for its standard library
+
+C++ is the main development language with some bash scripts to automate certain processes.
+The parser will remain in Yacc while the language undergoes severe refactoring/design but will eventually be a simple recursive parser when the language hits 1.0 and goes public (January 2025).
+
+Note: A development roadmap will also release with 1.0.
+
 
 
 #### Sample Programs
 [Functions](functions.md)
 
+Sample Programs will be used for more in-depth documentation and explanations of how the lanugage works.
 
 
 
