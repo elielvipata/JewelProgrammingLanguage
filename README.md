@@ -4,7 +4,7 @@ Jewel is a systems programming langauge with a focus on speed and memory safety.
 - Command line interfaces
 - Low level/memory intensive applications
 
-The language is immediately recognizable to programmers who have used Haskell, Rust, C, C++ or python. Its very rigid and imposes a strict structure that the programmer has to follow. Its expressive power gives it the same feel as a functional scripting language while the type system and standard library is meant to enforce runtime speed and robustness.
+The language is immediately recognizable to programmers who have used Haskell, Rust, C, C++ or python. It imposes a rigid structure that the programmer has to follow, has the same feel as a functional scripting language due to its expressiveness  and provides the speed of a low level language based on a strict type system meant to evaluate and impose memory safety.
 
 ``` rust
 // Hello world example:
@@ -15,6 +15,7 @@ main args {
 }
 
 ```
+
 
 ## Type System
 ### Native Datatypes
