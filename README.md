@@ -78,12 +78,9 @@ This is the current stack:
 - [Glibc](https://www.gnu.org/software/libc/) for its standard library
     -  A native standard library will be designed in 2026 while the base language undergoes tuning and testing. The overview of the features provided in the standard library along with a feature roadmap will be released with v1.0 in January 2027.
 
-C++ is the main development language with some bash scripts to automate certain processes.
-The parser will remain in Yacc while the language undergoes severe refactoring/design but will eventually be a simple recursive parser when the language hits 1.0 and goes public (January 2026).
+C++ is the main development language with some bash and python scripts to automate certain processes.
 
 Note: A development roadmap will also release with 1.0.
-
-
 
 #### Sample Programs
 [Functions](functions.md)
