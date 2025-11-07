@@ -1,7 +1,7 @@
 Jewel is a systems programming langauge with a focus on speed and memory safety. Still underheavy development the language is meant to be a great way to build:
 
-- Web servers
-- Command line interfaces
+- Web servers Applications
+- CLI Apps
 - Low level/memory intensive applications
 
 The language is immediately recognizable to programmers who have used Haskell, Rust, C, C++ or python. It imposes a rigid structure that the programmer has to follow, has the same feel as a functional scripting language due to its expressiveness  and provides the speed of a low level language based on a strict type system meant to evaluate and impose memory safety.
